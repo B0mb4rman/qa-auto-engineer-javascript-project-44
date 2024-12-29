@@ -11,3 +11,5 @@ The hexlet-check.yml file is responsible for running these tests - do not delete
 [Посмотреть демонстрацию игры "НОД"](https://asciinema.org/a/oVpIyN1PLoJ3fRjaK9VZCItLm)
 
 [Посмотреть демонстрацию игры "Арифметическая прогрессия"](https://asciinema.org/a/mAfm5shkVYXTUKl1GV6Izu37O)
+
+[Посмотреть демонстрацию игры "Простое ли число?"](https://asciinema.org/a/uFiay5giyPKwLvzQcjcwkcs6A)
