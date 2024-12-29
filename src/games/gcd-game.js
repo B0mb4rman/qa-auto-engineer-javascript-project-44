@@ -1,9 +1,13 @@
-import { runGame } from '../index.js';
+import runGame from '../index.js';
 
-const findGcd = (a, b) => {
+const findGcd = (num1, num2) => {
+  let a = num1;
+  let b = num2;
+
   while (b !== 0) {
     [a, b] = [b, a % b];
   }
+
   return a;
 };
 
@@ -22,6 +26,8 @@ const generateRound = () => {
   };
 };
 
-export const playGcdGame = () => {
+const playGcdGame = () => {
   runGame(description, generateRound);
 };
+
+export default playGcdGame;

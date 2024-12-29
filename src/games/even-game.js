@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import { greetUser } from '../cli.js';
+import greetUser from '../cli.js';
 
 const isEven = (number) => number % 2 === 0;
 
-export const playEvenGame = () => {
+const playEvenGame = () => {
   const userName = greetUser();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -19,7 +19,7 @@ export const playEvenGame = () => {
 
     if (userAnswer !== correctAnswer) {
       console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
       console.log(`Let's try again, ${userName}!`);
       return;
@@ -31,3 +31,5 @@ export const playEvenGame = () => {
 
   console.log(`Congratulations, ${userName}!`);
 };
+
+export default playEvenGame;

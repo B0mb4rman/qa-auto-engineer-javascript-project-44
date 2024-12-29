@@ -1,8 +1,8 @@
-import { runGame } from '../index.js';
+import runGame from '../index.js';
 
 const generateProgression = (start, step, length) => {
   const progression = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(start + i * step);
   }
   return progression;
@@ -25,6 +25,8 @@ const generateRound = () => {
   return { question, correctAnswer };
 };
 
-export const playProgressionGame = () => {
+const playProgressionGame = () => {
   runGame(description, generateRound);
 };
+
+export default playProgressionGame;
