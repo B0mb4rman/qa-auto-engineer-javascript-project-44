@@ -4,33 +4,33 @@ const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const generateRound = () => {
-    const num1 = Math.floor(Math.random() * 100);
-    const num2 = Math.floor(Math.random() * 100);
-    const operator = operators[Math.floor(Math.random() * operators.length)];
+  const num1 = Math.floor(Math.random() * 100);
+  const num2 = Math.floor(Math.random() * 100);
+  const operator = operators[Math.floor(Math.random() * operators.length)];
 
-    const question = `${num1} ${operator} ${num2}`;
-    let correctAnswer;
+  const question = `${num1} ${operator} ${num2}`;
+  let correctAnswer;
 
-    switch (operator) {
-        case '+':
-            correctAnswer = num1 + num2;
-            break;
-        case '-':
-            correctAnswer = num1 - num2;
-            break;
-        case '*':
-            correctAnswer = num1 * num2;
-            break;
-        default:
-            throw new Error(`Unknown operator: ${operator}`);
-    }
+  switch (operator) {
+    case '+':
+      correctAnswer = num1 + num2;
+      break;
+    case '-':
+      correctAnswer = num1 - num2;
+      break;
+    case '*':
+      correctAnswer = num1 * num2;
+      break;
+    default:
+      throw new Error(`Unknown operator: ${operator}`);
+  }
 
-    return {
-        question,
-        correctAnswer: String(correctAnswer),
-    };
+  return {
+    question,
+    correctAnswer: String(correctAnswer),
+  };
 };
 
 export const playCalcGame = () => {
-    runGame(description, generateRound);
+  runGame(description, generateRound);
 };
