@@ -9,3 +9,5 @@ The hexlet-check.yml file is responsible for running these tests - do not delete
 [Посмотреть демонстрацию игры "Калькулятор"](https://asciinema.org/connect/807bf2b9-035e-4954-bae5-0a479c2d5fe9)
 
 [Посмотреть демонстрацию игры "НОД"](https://asciinema.org/a/oVpIyN1PLoJ3fRjaK9VZCItLm)
+
+[Посмотреть демонстрацию игры "Арифметическая прогрессия"](https://asciinema.org/a/mAfm5shkVYXTUKl1GV6Izu37O)
